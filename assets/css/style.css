@@ -74,6 +74,11 @@ nav .logo {
 	left: auto;
 	top: 50px;
 	clip-path: circle(50%);
+	cursor: pointer;
+	transition: all 200ms;
+}
+nav .logo:hover {
+	transform: scale(1.1);
 }
 
 nav .logo-l {
@@ -81,6 +86,13 @@ nav .logo-l {
 	left: auto;
 	bottom: 50px;
 	clip-path: circle(50%);
+	cursor: pointer;
+	transition: all 200ms;
+	color: var(--light);
+}
+nav .logo-l:hover {
+	color: var(--yellow);
+	transform: scale(1.1);
 }
 
 .nav-links {
@@ -222,10 +234,10 @@ svg {
 		margin-top: 30px;
 		padding: 0 50px;
 	}
-
-	.top-nav-m img {
-		width: 40px;
+	.logo-m {
+		cursor: pointer;
 	}
+
 	.hero {
 		width: 100%;
 	}
