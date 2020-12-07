@@ -198,4 +198,7 @@ nav .logo {
 		width: 300px;
 		transform: translate(35px, 25px);
 	}
+	.hero-btns {
+		flex-direction: column;
+	}
 }
