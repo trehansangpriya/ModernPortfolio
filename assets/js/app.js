@@ -8,7 +8,7 @@ darkM.addEventListener('click', () => {
     document.body.classList.toggle('dark')
 })
 
-const tl = gsap.timeline({ defaults: { ease: 'ease' } })
+const tl = gsap.timeline({ defaults: { ease: 'slow' } })
 
 tl.to('#y-1', { x: '200px', repeat: -1, yoyo: true, duration: .8 })
 tl.to('#y-2', { x: '150px', repeat: -1, yoyo: true, duration: .5 })
