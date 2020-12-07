@@ -91,6 +91,10 @@ nav .logo {
 	color: var(--yellow);
 }
 
+.nav-text {
+	font-size: 14px;
+}
+
 .top-nav-m {
 	display: none;
 }
@@ -178,6 +182,9 @@ nav .logo {
 		flex-direction: row;
 		justify-content: space-around;
 		align-items: center;
+	}
+	.nav-text {
+		font-size: 12px;
 	}
 	.top-nav-m {
 		position: fixed;
