@@ -160,7 +160,22 @@ nav .logo {
 .hero-btns .btn-cta:hover {
 	transform: scale(1.1);
 }
+
+svg {
+	position: absolute;
+	right: 0;
+	top: 10px;
+	width: 300px;
+}
 @media screen and (max-width: 720px) {
+	body {
+		overflow-x: hidden;
+	}
+	svg {
+		right: 0px;
+		top: 20px;
+		width: 200px;
+	}
 	nav {
 		position: fixed;
 		bottom: 0;
