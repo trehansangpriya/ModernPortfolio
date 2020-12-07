@@ -7,3 +7,10 @@ darkL.addEventListener('click', () => {
 darkM.addEventListener('click', () => {
     document.body.classList.toggle('dark')
 })
+
+const tl = gsap.timeline({ defaults: { ease: 'ease' } })
+
+tl.to('#y-1', { x: '200px', repeat: -1, yoyo: true, duration: .8 })
+tl.to('#y-2', { x: '150px', repeat: -1, yoyo: true, duration: .5 })
+tl.to('#y-3', { x: '50px', repeat: -1, yoyo: true, duration: .6 })
+tl.to('#r-1', { x: '100px', repeat: -1, yoyo: true, duration: .6 })

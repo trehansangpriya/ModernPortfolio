@@ -18,6 +18,8 @@
 body {
 	background-color: var(--dark);
 	color: var(--light);
+	transition: all 500ms;
+	overflow-x: hidden;
 }
 body.dark {
 	background-color: var(--light);
