@@ -28,6 +28,9 @@ body.dark .hero-btns .btn-cta {
 	font-weight: 600;
 	background-color: var(--yellowL);
 }
+body.dark .hero-btns .btn-cta:hover {
+	transform: scale(1.2);
+}
 
 body.dark .hero-btns .btn:hover {
 	font-weight: 700;
