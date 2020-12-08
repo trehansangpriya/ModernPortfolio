@@ -191,6 +191,8 @@ nav .logo-l:hover {
 	right: 0;
 	top: 50px;
 	width: 300px;
+	opacity: 0;
+	display: none;
 }
 .blue {
 	position: absolute;
@@ -205,6 +207,12 @@ nav .logo-l:hover {
 .blue svg circle {
 	fill: var(--Blue);
 }
+
+.about {
+	width: 100%;
+	min-height: 100vh;
+}
+
 @media screen and (max-width: 720px) {
 	body {
 		overflow-x: hidden;
@@ -215,7 +223,7 @@ nav .logo-l:hover {
 		width: 200px;
 	}
 	.blue {
-		display: none;
+		display: none !important;
 	}
 	nav {
 		position: fixed;
