@@ -426,7 +426,7 @@ nav .logo-l:hover {
 
 	.cards {
 		flex-direction: column;
-		margin-left: -10px;
+		margin-left: -15px;
 		justify-content: flex-start;
 		align-items: flex-start;
 	}
@@ -434,18 +434,21 @@ nav .logo-l:hover {
 	.card {
 		width: 180px;
 		height: 180px;
-		padding: 20px;
+		padding: 25px;
 		margin: 10px;
 		overflow: visible;
 		align-items: flex-start;
 	}
 
 	.c-icon {
+		text-align: start;
 		font-size: 46px;
+		padding-left: 0;
 	}
 
 	.c-title {
 		font-size: 22px;
+		text-align: start;
 	}
 	.c-content {
 		display: none;
@@ -453,10 +456,10 @@ nav .logo-l:hover {
 	.c-content-sm {
 		position: absolute;
 		font-size: 17px;
-		width: 110%;
+		width: 100%;
 		height: 95%;
 		top: auto;
-		left: 90%;
+		left: 80%;
 		display: flex;
 		justify-content: center;
 		align-items: center;
