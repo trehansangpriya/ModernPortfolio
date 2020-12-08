@@ -4,6 +4,8 @@
 	--yellow: #f0c808;
 	--light: #f6f6f6;
 	--lBlue: #bfcde0;
+	--yellowL: #e5bf07;
+	--redL: #c90f0d;
 	--fFamily: 'Poppins', sans-serif;
 	--darkShadowSm: 4px 4px 15px rgba(211, 211, 211, 0.158);
 	--darkShadowLg: 2px 2px 10px rgba(211, 211, 211, 0.158);
@@ -24,6 +26,19 @@ body {
 body.dark {
 	background-color: var(--light);
 	color: var(--dark);
+}
+
+body.dark .hero-btns .btn {
+	border: 2px solid var(--yellowL);
+	color: var(--dark);
+	font-weight: 600;
+}
+
+body.dark .hero-btns .btn:hover {
+	font-weight: 700;
+	border: 1px solid var(--yellow);
+	color: var(--dark);
+	background-color: var(--yellow);
 }
 body a {
 	text-decoration: none;
@@ -188,7 +203,7 @@ nav .logo-l:hover {
 svg {
 	position: absolute;
 	right: 0;
-	top: 10px;
+	top: 50px;
 	width: 300px;
 }
 @media screen and (max-width: 720px) {
@@ -197,7 +212,7 @@ svg {
 	}
 	svg {
 		right: 0px;
-		top: 20px;
+		top: 50px;
 		width: 200px;
 	}
 	nav {
