@@ -135,12 +135,13 @@ nav .logo-l:hover {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	clip-path: circle(45%);
+	/* clip-path: circle(45%); */
 }
 
 .hero-img img {
-	width: 400px;
-	transform: translate(45px, 25px);
+	width: 300px;
+	margin-bottom: 50px;
+	/* transform: translate(45px, 25px); */
 }
 
 .hero-head {
@@ -247,8 +248,9 @@ svg {
 		font-size: 28px;
 	}
 	.hero-img img {
-		width: 250px;
-		transform: translate(30px, 25px);
+		width: 200px;
+		margin-bottom: 20px;
+		/* transform: translate(30px, 25px); */
 	}
 	.hero-btns {
 		flex-direction: column;
