@@ -1,0 +1,37 @@
+:root {
+	--red: #dd1c1a;
+	--dark: #011627;
+	--yellow: #f0c808;
+	--light: #f6f6f6;
+	--lBlue: #bfcde0;
+	--yellowL: #e5bf07;
+	--redL: #c90f0d;
+	--Blue: #6cabff;
+	--darkBlue: #3174d0;
+	--fFamily: 'Poppins', sans-serif;
+	--darkShadowSm: 4px 4px 15px rgba(211, 211, 211, 0.158);
+	--darkShadowLg: 2px 2px 10px rgba(211, 211, 211, 0.158);
+}
+body.dark {
+	background-color: var(--light);
+	color: var(--dark);
+}
+
+body.dark .hero-btns .btn {
+	border: 2px solid var(--yellowL);
+	color: var(--dark);
+	font-weight: 600;
+}
+body.dark .hero-btns .btn-cta {
+	border: 2px solid var(--yellowL);
+	color: var(--dark);
+	font-weight: 600;
+	background-color: var(--yellowL);
+}
+
+body.dark .hero-btns .btn:hover {
+	font-weight: 700;
+	border: 2px solid var(--yellowL);
+	color: var(--dark);
+	background-color: var(--yellowL);
+}
