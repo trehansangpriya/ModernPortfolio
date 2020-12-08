@@ -15,7 +15,7 @@ const tlScroll = gsap.timeline({
         trigger: '.about',
         start: '400px bottom',
         end: 'top top',
-        markers: true,
+        // markers: true,
         // scrub: true,
     }
 })
@@ -42,7 +42,7 @@ gsap.timeline({
         trigger: '.skills',
         start: '400px bottom',
         end: 'top top',
-        markers: true,
+        // markers: true,
         // scrub: true,
     }
 }).from('.skills-head', { x: '-100%', opacity: 0, duration: .7 })
