@@ -1,6 +1,10 @@
 const darkL = document.querySelector('.logo-l')
 const darkM = document.querySelector('.logo-m')
-
+if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+    document.body.className = ''
+} else {
+    document.body.className = 'dark'
+}
 darkL.addEventListener('click', () => {
     document.body.classList.toggle('dark')
 })
