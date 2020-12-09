@@ -86,3 +86,10 @@ body.dark .skills .c-content,
 	background-color: var(--yellowL);
 	font-weight: 600;
 }
+body.dark .abt-content a {
+	color: var(--darkBlue);
+}
+
+body.dark .abt-content a:hover {
+	color: var(--yellowL);
+}

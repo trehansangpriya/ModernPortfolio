@@ -33,8 +33,8 @@ tl2.from('.hero-img img', { y: '-20%', opacity: 0, duration: 2, delay: 1 })
     .from('.blue', { display: 'none', opacity: 0, duration: 3 }, '-=2')
 
 tlScroll.from('.abt-head', { x: '-100%', opacity: 0, duration: .7 })
-    .from('.abt-content', { y: '50%', opacity: 0, duration: .5 })
-    .from('.know-more', { y: '100%', opacity: 0, duration: .2 })
+    .from('.abt-content span', { y: '50%', opacity: 0, duration: .5, stagger: .2 })
+    .from('.know-more', { y: '100%', opacity: 0, duration: .2 }, '-=1.5')
 
 
 gsap.timeline({
@@ -45,5 +45,7 @@ gsap.timeline({
         // markers: true,
         // scrub: true,
     }
-}).from('.skills-head', { x: '-100%', opacity: 0, duration: .7 })
-    .from('.card', { x: '-100%', opacity: 0, duration: 0.5 }, '-=0.5')
+}).from('.skills-head.first', { x: '-100%', opacity: 0, duration: .7 })
+    .from('.cards.first .card', { x: '-100%', opacity: 0, duration: 0.5, stagger: .1 }, '-=0.6')
+    .from('.skills-head.second', { x: '-100%', opacity: 0, duration: .7 })
+    .from('.cards.second .card', { x: '-100%', opacity: 0, duration: 0.5, stagger: .1 }, '-=0.6')
