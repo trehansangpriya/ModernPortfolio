@@ -8,6 +8,7 @@
 	--redL: #c90f0d;
 	--Blue: #6cabff;
 	--darkBlue: #3174d0;
+	--lightShadow: 2px 2px 10px rgba(0, 0, 0, 0.15);
 	--fFamily: 'Poppins', sans-serif;
 	--darkShadowSm: 4px 4px 15px rgba(211, 211, 211, 0.158);
 	--darkShadowLg: 2px 2px 10px rgba(211, 211, 211, 0.158);
@@ -37,4 +38,51 @@ body.dark .hero-btns .btn:hover {
 	border: 2px solid var(--yellowL);
 	color: var(--dark);
 	background-color: var(--yellowL);
+}
+
+body.dark .blue circle {
+	fill: var(--darkBlue);
+}
+
+body.dark .abt-head {
+	color: var(--darkBlue);
+}
+
+body.dark .abt-content {
+	font-weight: 600;
+}
+
+body.dark .know-more {
+	border: 2px solid var(--yellowL);
+	color: var(--dark);
+	font-weight: 600;
+}
+
+body.dark .know-more:hover {
+	font-weight: 700;
+	border: 2px solid var(--yellowL);
+	color: var(--dark);
+	background-color: var(--yellowL);
+}
+
+body.dark .skills-head {
+	color: var(--darkBlue);
+}
+
+body.dark .skills .card {
+	box-shadow: var(--lightShadow);
+}
+
+body.dark .c-icon {
+	color: var(--yellowL);
+}
+
+body.dark .c-title {
+	font-weight: 600;
+}
+
+body.dark .skills .c-content,
+.c-content-sm {
+	background-color: var(--yellowL);
+	font-weight: 600;
 }
