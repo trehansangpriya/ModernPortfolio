@@ -20,6 +20,23 @@
 	scroll-behavior: smooth;
 }
 
+::-webkit-scrollbar {
+	width: 8px;
+}
+
+::-webkit-scrollbar-track {
+	background: #222222;
+}
+
+::-webkit-scrollbar-thumb {
+	background: #444444;
+	border-radius: 500px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background: #555;
+}
+
 body {
 	background-color: var(--dark);
 	color: var(--light);
@@ -340,6 +357,81 @@ nav .logo-l:hover {
 .c-content-sm {
 	display: none;
 }
+
+.projects {
+	min-height: 70vh;
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	margin-left: 12vh;
+	padding: 50px 100px;
+}
+
+.projects-head {
+	font-size: 82px;
+	font-weight: 800;
+	color: var(--Blue);
+}
+.project-cards {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	margin-left: -10px;
+	margin-top: 20px;
+}
+
+.project-card {
+	width: 45%;
+	margin: 10px;
+}
+.project-card img {
+	width: 100%;
+	box-shadow: var(--darkShadowLg);
+	border-radius: 8px;
+	transition: all 200ms ease-in-out;
+}
+
+.project-card:hover img {
+	box-shadow: 2px 2px 25px rgba(211, 211, 211, 0.158);
+	transform: scale(1.02);
+}
+.contact {
+	min-height: 50vh;
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	margin-left: 12vh;
+	padding: 50px 100px;
+}
+
+.contact-head {
+	font-size: 82px;
+	font-weight: 800;
+	color: var(--Blue);
+}
+.icons {
+	display: flex;
+	width: 100%;
+	flex-wrap: wrap;
+	align-items: center;
+	margin-top: 20px;
+}
+
+.icons .icon {
+	margin: 10px;
+	padding: 20px 50px 20px 0;
+	transition: all 200ms ease-in-out;
+}
+
+.icons .icon:hover {
+	color: var(--yellow);
+	transform: translateY(-10px);
+}
+
+.icons .icon span {
+	font-size: 64px;
+}
+
 @media screen and (max-width: 860px) {
 	body {
 		overflow-x: hidden;
@@ -479,5 +571,41 @@ nav .logo-l:hover {
 		color: var(--dark);
 		border-radius: 10px;
 		font-weight: 700;
+	}
+
+	.projects {
+		margin-left: 0vh;
+		padding: 50px 30px;
+	}
+
+	.projects-head {
+		font-size: 52px;
+	}
+	.project-cards {
+		flex-direction: column;
+		margin-left: -10px;
+		justify-content: flex-start;
+		align-items: flex-start;
+	}
+
+	.project-card {
+		width: 100%;
+		margin: 10px;
+	}
+
+	.contact {
+		min-height: 60vh;
+		margin-left: 0vh;
+		padding: 50px 30px;
+	}
+
+	.contact-head {
+		font-size: 52px;
+	}
+	.icons .icon {
+		padding: 15px 20px 15px 0;
+	}
+	.icons .icon span {
+		font-size: 36px;
 	}
 }

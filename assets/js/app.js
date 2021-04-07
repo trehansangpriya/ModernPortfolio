@@ -2,10 +2,10 @@ const darkL = document.querySelector('.logo-l')
 const darkM = document.querySelector('.logo-m')
 
 darkL.addEventListener('click', () => {
-    document.body.classList.toggle('dark')
+    document.body.classList.toggle('light')
 })
 darkM.addEventListener('click', () => {
-    document.body.classList.toggle('dark')
+    document.body.classList.toggle('light')
 })
 
 const tl = gsap.timeline({ defaults: { ease: 'slow' } })
@@ -45,7 +45,27 @@ gsap.timeline({
         // markers: true,
         // scrub: true,
     }
-}).from('.skills-head.first', { x: '-100%', opacity: 0, duration: .7 })
-    .from('.cards.first .card', { x: '-100%', opacity: 0, duration: 0.5, stagger: .1 }, '-=0.6')
-    .from('.skills-head.second', { x: '-100%', opacity: 0, duration: .7 })
-    .from('.cards.second .card', { x: '-100%', opacity: 0, duration: 0.5, stagger: .1 }, '-=0.6')
+}).from('.skills-head', { x: '-100%', opacity: 0, duration: .7 })
+    .from('.skills .cards .card', { x: '-100%', opacity: 0, duration: 0.5, stagger: .1 }, '-=0.6')
+
+gsap.timeline({
+    scrollTrigger: {
+        trigger: '.projects',
+        start: '400px bottom',
+        end: 'top top',
+        // markers: true,
+        // scrub: true,
+    }
+}).from('.projects-head', { x: '-100%', opacity: 0, duration: .7 })
+    .from('.projects .project-cards .project-card', { x: '-100%', scale: '0', opacity: 0, duration: 0.7, stagger: .1 }, '-=0.6')
+
+gsap.timeline({
+    scrollTrigger: {
+        trigger: '.contact',
+        start: 'top bottom',
+        end: 'top center',
+        // markers: true,
+        // scrub: true,
+    }
+}).from('.contact-head', { x: '-100%', opacity: 0, duration: .7 })
+    .from('.icons .icon', { x: '-100%', opacity: 0, duration: 0.7, stagger: .1 }, '-=0.6')
